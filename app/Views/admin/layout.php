@@ -55,7 +55,6 @@
         font-weight: 600;
     }
 
-    /* MAIN CONTENT */
     .main {
         margin-left: 250px;
         width: calc(100% - 250px);
@@ -64,7 +63,6 @@
         flex-direction: column;
     }
 
-    /* NAVBAR */
     .navbar {
         height: 60px;
         background: #1f2732;
@@ -87,12 +85,10 @@
         color: #ffdf3c;
     }
 
-    /* CONTENT AREA */
     .content {
         padding: 30px;
     }
 
-    /* FOOTER */
     footer {
         text-align: center;
         padding: 15px;
@@ -101,14 +97,12 @@
         margin-top: auto;
     }
 
-    /* CARD STYLE */
     .card {
         background: #3a444e;
         padding: 20px;
         border-radius: 10px;
         margin-bottom: 20px;
     }
-        /* USER DROPDOWN */
     .user-menu {
         position: relative;
         cursor: pointer;
@@ -202,12 +196,10 @@
     </div>
 
 
-    <!-- PAGE CONTENT -->
     <div class="content">
         <?= $this->renderSection('content'); ?>
     </div>
 
-    <!-- FOOTER -->
     <footer>
         © <?= date('Y'); ?> Bangun Bangsa. Admin Panel. All rights reserved.
     </footer>
@@ -219,7 +211,6 @@
         document.querySelector('.user-menu').classList.toggle('active');
     }
 
-    // Close dropdown when clicking outside
     document.addEventListener("click", function(e) {
         const menu = document.querySelector(".user-menu");
         if (!menu.contains(e.target)) {
